@@ -1,0 +1,115 @@
+.guideSide{
+    overflow: hidden;
+}
+
+.guideGrid {
+    
+  margin: 200px 0 120px 0;
+  display: grid;
+  gap: 160px;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-areas:
+    "content1 boy"
+    "city content2";
+
+  &__content {
+    width: 445px;
+
+    &-title {
+      color: $darkNavy;
+    }
+
+    &-paragraph {
+      color: $dimGrey;
+      margin: 24px 0 40px 0;
+    }
+    
+  }
+
+  &__sideImg {
+    border-radius: 50%;
+  }
+
+  &__boy{
+    position: relative;
+    
+  }
+
+  &__boy::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 740.06px;
+    height: 150.44px;
+    background-image: url(/img/guideSide_arrow1.svg);
+    top: 299.5px;
+    right: -165px;
+  }
+
+  &__boy::after{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 509px;
+    width: 445px;
+    height: 445px;
+    background-color: $lightGrey;
+    border-radius: 50%;
+    z-index: -5;
+  }
+
+  .guideGrid__city{
+    position: relative;
+  }
+
+  .guideGrid__city::before{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    right: 509px;
+    width: 445px;
+    height: 445px;
+    background-color: $lightGrey;
+    border-radius: 50%;
+    z-index: -5;
+  }
+
+  .guideGrid__city::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 740.06px;
+    height: 150.44px;
+    background-image: url(/img/guideSide_arrow2.svg);
+    top: -8px;
+    right: 260.21px;
+  }
+
+  .guideGrid__cash{
+    position: relative;
+  }
+
+  .guideGrid__cash::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 740.06px;
+    height: 150.44px;
+    background-image: url(/img/guideSide_arrow1.svg);
+    top: 85px;
+    left: 255.21px;
+  }
+
+  .guideGrid__cash::after{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 509px;
+    width: 445px;
+    height: 445px;
+    background-color: $lightGrey;
+    border-radius: 50%;
+    z-index: -5;
+  }
+}

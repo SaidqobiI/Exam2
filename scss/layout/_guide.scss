@@ -1,0 +1,38 @@
+.guidecontent{
+    display: flex;
+    margin-top: 160px;
+
+
+    &__content{
+        margin-right: 30px;
+
+        &-contentimg{
+            @extend .circle;
+            position: relative;
+        }
+        
+        &-contentImg::after{
+            content: "";
+            display: inline-block;
+            height: 15px;
+            width: 975px;
+            background-color: $lightGrey;
+            position: absolute;
+            right: 95px;
+            z-index: -1;
+            
+        }
+
+        &-title{
+            @extend h4;
+            color: $darkNavy;
+            margin: 40px 0 27px 0;
+        }
+
+        &-paragraph{
+            width: 350px;
+            color: $dimGrey;
+            @extend p;
+        }
+    }
+}

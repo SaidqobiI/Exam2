@@ -1,0 +1,196 @@
+.callToAction{
+    height: 300px;
+    background-color: $darkNavy;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+    
+    .callAction{
+        width: 1110px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__title{
+            color: $paragraphColorWhite;
+            width: 415px;
+        }
+
+        &__btns{
+            display: flex;
+            align-items: center;
+
+            &--btn{
+                margin-left: 18px;
+                display: grid;
+                align-items: center;
+                text-decoration: none;
+                background-color: $lightGrey;
+                border-radius: 4px;
+                padding: 8px 16px;
+                grid-template-areas: 
+                "icon paragraph"
+                "icon names"
+                ;
+
+                &-icon{
+                    grid-area: icon;
+                    font-size: 30px;
+                    color: $darkNavy;
+                    margin-right: 11.73px;
+                }
+
+                &-paragraph{
+                    grid-area: paragraph;
+                    font-family: $boldFont;
+                    color: $darkNavy;
+                    font-size: 10px;
+                    line-height: 14.81px;
+                    letter-spacing: -0.45px;
+                }
+
+                &-name{
+                    grid-area: names;
+                    font-family: $boldFont;
+                    color: $darkNavy;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: -0.89px;
+                }
+            }
+        }
+
+    }
+
+    &__circle{
+        width: 347px;
+        height: 347px;
+        background: none;
+        border: 15px solid $lightGrey;
+        border-radius: 50%;
+        position: absolute;
+        opacity: 0.1;
+    }
+
+    &__circle:nth-child(2){
+        background-color: $lightGrey;
+        top: 150px;
+        right: -163px   ; 
+    }
+
+    &__circle:nth-child(3){
+        top: 150px;
+        right: 240px; 
+    }
+
+    &__circle:nth-child(4){
+        top: 150px;
+        right: 643px; 
+    }
+
+
+    
+}
+
+
+@media only screen and (max-width:375px){
+    .callToAction{
+        background-color: $darkNavy;
+        height: 320px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+        .callAction{
+            width: 311px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+    
+            &__title{
+                color: $paragraphColorWhite;
+                width: 415px;
+                font-size: 32px;
+                text-align: center;
+                width: 311px;
+            }
+    
+            &__btns{
+                display: flex;
+                align-items: center;
+    
+                &--btn{
+                    margin-left: 18px;
+                    display: grid;
+                    align-items: center;
+                    text-decoration: none;
+                    background-color: $lightGrey;
+                    border-radius: 4px;
+                    padding: 8px 11.43px;
+                    grid-template-areas: 
+                    "icon paragraph"
+                    "icon names"
+                    ;
+    
+                    &-icon{
+                        grid-area: icon;
+                        font-size: 30px;
+                        color: $darkNavy;
+                        margin-right: 11.73px;
+                    }
+    
+                    &-paragraph{
+                        grid-area: paragraph;
+                        font-family: $boldFont;
+                        color: $darkNavy;
+                        font-size: 10px;
+                        line-height: 14.81px;
+                        letter-spacing: -0.45px;
+                    }
+    
+                    &-name{
+                        grid-area: names;
+                        font-family: $boldFont;
+                        color: $darkNavy;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: -0.89px;
+                    }
+                }
+            }
+    
+        }
+    
+        &__circle{
+            width: 347px;
+            height: 347px;
+            background: none;
+            border: 15px solid $lightGrey;
+            border-radius: 50%;
+            position: absolute;
+            opacity: 0.1;
+        }
+    
+        &__circle:nth-child(2){
+            background-color: $lightGrey;
+            top: 150px;
+            right: -163px   ; 
+        }
+    
+        &__circle:nth-child(3){
+            top: 150px;
+            right: 240px; 
+        }
+    
+        &__circle:nth-child(4){
+            top: 150px;
+            right: 643px; 
+        }
+    
+    
+        
+    }
+}

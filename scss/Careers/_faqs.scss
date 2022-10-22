@@ -1,0 +1,56 @@
+.titleFaqs{
+    color: $darkNavy;
+    text-align: center;
+    margin: 120px 0 64px 0;
+}
+
+.gridBox{
+    margin-bottom: 160px;
+    display: grid;
+    gap: 64px;
+    align-items: flex-start;
+    justify-content: space-between;
+    grid-template-areas: 
+    "title1 box1"
+    "title2 box2"
+    ;
+
+    &__title:nth-child(1){
+        color: $darkNavy;
+        grid-area: "title1";
+    }
+
+    &__title:nth-child(2){
+        color: $darkNavy;
+        grid-area: "title2";
+    }
+
+    &__boxs{
+        
+        
+        &--box{
+            width: 730px;
+            padding: 32px 40px;
+            background-color: $snow;
+            margin-bottom: 16px;
+            
+            &-questions{
+                color: $darkNavy;
+            }
+
+            &-paragraph{
+                color: $darkNavy;
+                margin-top: 24px;
+            }
+        }
+    }
+
+
+    &__boxs:nth-child(1){
+        grid-area: "box1";
+    }
+
+    &__boxs:nth-child(2){
+        grid-area: "box2";
+    }
+}

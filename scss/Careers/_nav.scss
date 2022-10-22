@@ -1,0 +1,46 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;
+
+   
+    &__left{
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        &--logo{
+            margin-right: 58.18px;
+        }
+
+       &---ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 249px;
+        margin-left: 58.18px;
+        list-style: none;
+
+        &--list{
+
+            &-link{
+                @extend p;
+                color: $dimGrey;
+                text-decoration: none
+            }
+        }
+       }
+    }
+
+    &__GetScootin{
+        @extend .btn;
+        padding: 14px 39px;
+        text-decoration: none;
+    }
+}
+
+
+
+
+

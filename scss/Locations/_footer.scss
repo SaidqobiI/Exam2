@@ -1,0 +1,125 @@
+footer{
+    height: 96px;
+    background-color: rgba(51, 58, 68, 1);
+    position: relative;
+    z-index: 11;
+
+    .footer{
+        height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__left{
+            display: flex;
+            align-items: center;
+
+            &---ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                width: 249px;
+                margin-left: 58.58px;
+
+                &--list{
+                    
+                    &-link{
+                        @extend p;
+                        color: $paragraphColorWhite;
+                        text-decoration: none;
+                    }
+
+                    &-link:active{
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+
+        &__icons{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 30px;
+            width: 120px;
+
+            &--iconLink{
+                color: $yellow;
+            }
+
+            &--iconLink:active{
+                color: $lightGrey;
+            }
+
+        }
+
+    }
+        
+}
+
+@media only screen and (max-width:375px){
+    footer{
+        height: 483px;
+        background-color: rgba(51, 58, 68, 1);
+        position: relative;
+        z-index: 11;
+    
+        .footer{
+            height: 483px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            &__left{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                &---ul{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    list-style: none;
+                    height: 107px;
+                    margin-left: 58.58px;
+                    margin: 41.4px auto 85px auto;
+    
+                    &--list{
+                        
+                        &-link{
+                            @extend p;
+                            color: $paragraphColorWhite;
+                            text-decoration: none;
+                        }
+    
+                        &-link:active{
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+    
+            &__icons{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 30px;
+                width: 120px;
+    
+                &--iconLink{
+                    color: $yellow;
+                }
+    
+                &--iconLink:active{
+                    color: $lightGrey;
+                }
+    
+            }
+    
+        }
+            
+    }
+}

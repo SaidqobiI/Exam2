@@ -1,0 +1,59 @@
+h1{
+    font-family: $boldFont;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+}
+
+h2{
+    font-family: $boldFont;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+}
+
+h3{
+    font-family: $boldFont;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.79px;
+}
+
+h4{
+    font-family: $boldFont;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+}
+
+p{
+    font-family: $paragraphFont;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.btn{
+    background-color: $yellow;
+    border: 3px solid $yellow;
+    font-family: $boldFont;
+    color: $paragraphColorWhite;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.btn:hover{
+    background: none;
+    border: 3px solid $yellow;
+    color: $yellow;
+}
+
+.circle{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: $yellow;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

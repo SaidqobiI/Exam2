@@ -1,0 +1,147 @@
+.location{
+    background-image: url(/img/map.png);
+    background-repeat: no-repeat;
+    width: 1110px;
+    height: 542.81px;
+    margin-top: 120px;
+    position: relative;
+
+    &__city{
+        color: $darkNavy;
+        width: 189px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $yellow;
+        position: absolute;
+    }
+
+    &__city::after{
+        content: "";
+        display: block;
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+        background-color: $yellow;
+        width: 31px;
+        height: 16px;
+        position: absolute;
+        top: 72px;
+    }
+
+    &__city:nth-child(1){
+        top: 71.44px;
+        left: 147;
+    }
+
+    &__city:nth-child(2){
+        top: 18px;
+        left: 393px;
+    }
+
+    &__city:nth-child(3){
+        top: 78px;
+        left: 856px;
+    }
+
+    &__city:nth-child(4){
+        top: 251px;
+        left: 779px;
+    }
+ 
+}
+
+.massageUs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 120.19px 0 120px 0;
+
+    &__title{
+        color: $darkNavy;
+        width: 351px;
+    }
+
+    &__paragaraph{
+        color: $darkNavy;
+        width: 445px;
+    }
+
+    &__btnMassage{
+        @extend .btn;
+        padding: 14px 44px;
+    }
+}
+
+
+// @media only screen and (max-width:375px){
+//     .location{
+//         background-image: url(/img/map.png);
+//         background-repeat: no-repeat;
+//         width: 311px;
+//         height: 152px;
+//         background-size: 100%;
+//         margin: 72px auto 40px auto;
+//         position: relative;
+    
+//         &__city{
+//             color: $darkNavy;
+//             width: 16px;
+//             height: 16px;
+//             border-radius: 50%;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             background-color: $yellow;
+//             position: absolute;
+//         }
+    
+//         &__city:nth-child(1){
+//             top: 33px;
+//             left: 67px;
+//         }
+    
+//         &__city:nth-child(2){
+//             top: 22px;
+//             left: 132px;
+//         }
+    
+//         &__city:nth-child(3){
+//             top: 41px;
+//             left: 259px;
+//         }
+    
+//         &__city:nth-child(4){
+//             top: 87px;
+//             left: 237px;
+//         }
+     
+//     }
+    
+//     .massageUs{
+//         width: 311px;
+//         height: 306px;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: space-between;
+//         margin: 72px 0;
+//         text-align: center;
+//         margin: auto;
+    
+//         &__title{
+//             color: $darkNavy;
+//         }
+    
+//         &__paragaraph{
+//             color: $darkNavy;
+//             @extend p;
+//             font-size: 15px;
+//         }
+    
+//         &__btnMassage{
+//             @extend .btn;
+//             padding: 14px 44px;
+//         }
+//     }
+// }
+

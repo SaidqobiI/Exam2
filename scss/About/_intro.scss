@@ -1,0 +1,52 @@
+.intro{
+    height: 200px;
+    background-image: url("/img/introabout.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+    margin-top: 96px;
+
+    .context{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__title{
+            width: 500px;
+            @extend h1;
+            color: $paragraphColorWhite;
+        }
+
+        &__circle{
+            width: 62px;
+            height: 62px;
+            background: none;
+            border: 3px solid $paragraphColorWhite;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        &__circle:nth-child(2){
+            right: 141px;
+
+        }
+ 
+        &__circle:nth-child(3){
+            right: 55px;
+
+        }
+        
+        &__circle:nth-child(4){
+            background: $paragraphColorWhite;
+            right: -31px;
+
+        }
+
+
+    }
+}
+
+
+
